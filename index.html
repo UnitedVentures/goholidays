@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Go Holidays — Dream. Explore. Discover.</title>
+  <meta name="description" content="Go Holidays — Sri Lanka's premier outbound travel agency. Bespoke journeys crafted for the bold explorer. Browse our curated itineraries." />
+
+  <!-- DM Sans from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+
+  <!-- TAN-NIMBUS is loaded via @font-face in style.css -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar__inner">
+
+      <a href="#home" class="navbar__logo">
+        <img src="assets/images/logo.png" alt="Go Holidays" />
+      </a>
+
+      <ul class="navbar__nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#itineraries">Itineraries</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#journal">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="navbar__actions">
+        <a href="#contact" class="btn btn-lime">Build Your Trip</a>
+      </div>
+
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     HERO — PARALLAX
+═══════════════════════════════════════════════════════ -->
+<section class="hero" id="home">
+
+  <!-- Three parallax layers -->
+  <div class="parallax-layer parallax-layer--bg"></div>
+  <div class="parallax-layer parallax-layer--mid"></div>
+  <div class="parallax-layer parallax-layer--stripe"></div>
+
+  <!-- Corner brackets (decorative) -->
+  <div class="hero__bracket"></div>
+  <div class="hero__bracket-tl"></div>
+
+  <div class="hero__content">
+    <div class="container">
+      <div class="hero__inner">
+
+        <div class="hero__text">
+          <div class="hero__eyebrow">
+            <span></span>
+            Sri Lanka's Premier Travel Agency
+          </div>
+          <h1 class="hero__title">
+            Dream It.<br>
+            <em>Explore It.</em><br>
+            Discover It.
+          </h1>
+          <p class="hero__desc">
+            We craft bespoke journeys tailored to your desires — from secluded island escapes and cultural immersions to adventures across the globe.
+          </p>
+          <div class="hero__ctas">
+            <a href="#itineraries" class="btn btn-lime">
+              Explore Itineraries
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-outline-light">Build Your Trip</a>
+          </div>
+        </div>
+
+        <div class="hero__scroll-hint">
+          Scroll to explore
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     STATS
+═══════════════════════════════════════════════════════ -->
+<div class="stats">
+  <div class="container">
+    <div class="stats__grid">
+      <div class="stats__item">
+        <div class="stats__num" data-count="1200" data-suffix="+">0</div>
+        <div class="stats__label">Happy Travellers</div>
+      </div>
+      <div class="stats__item">
+        <div class="stats__num" data-count="45" data-suffix="+">0</div>
+        <div class="stats__label">Destinations</div>
+      </div>
+      <div class="stats__item">
+        <div class="stats__num" data-count="8" data-suffix="">0</div>
+        <div class="stats__label">Years of Excellence</div>
+      </div>
+      <div class="stats__item">
+        <div class="stats__num" data-count="98" data-suffix="%">0</div>
+        <div class="stats__label">Satisfaction Rate</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     ABOUT
+═══════════════════════════════════════════════════════ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about__grid">
+
+      <div class="about__images reveal">
+        <div class="about__deco"></div>
+        <img class="about__img-main"
+          src="https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=900&auto=format&fit=crop"
+          alt="Luxury beach travel" loading="lazy" />
+        <img class="about__img-accent"
+          src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600&auto=format&fit=crop"
+          alt="Travel experience" loading="lazy" />
+        <div class="about__badge">
+          <span class="about__badge-num">8+</span>
+          <span class="about__badge-txt">Years of<br>Excellence</span>
+        </div>
+      </div>
+
+      <div class="reveal reveal-d2">
+        <div class="eyebrow">Who We Are</div>
+        <h2 class="section-title" style="font-size:var(--display-md)">The Leisure Arm<br>of Travel7, Sri Lanka.</h2>
+        <p class="section-sub">Go Holidays is a distinguished outbound travel agency — a passionate team turning travel dreams into seamlessly curated realities with deep industry expertise and global connections.</p>
+
+        <div class="about__features">
+          <div class="about__feature">
+            <div class="about__feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21l1.18-6.86L2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <div>
+              <div class="about__feature-title">VIP Experiences</div>
+              <p style="font-size:.88rem">Exclusive access to hidden gems, private transfers, and unparalleled service worldwide.</p>
+            </div>
+          </div>
+          <div class="about__feature">
+            <div class="about__feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <div>
+              <div class="about__feature-title">Personalised Concierge</div>
+              <p style="font-size:.88rem">From bespoke dining to custom itinerary planning — every detail crafted for you.</p>
+            </div>
+          </div>
+          <div class="about__feature">
+            <div class="about__feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+            </div>
+            <div>
+              <div class="about__feature-title">Expert Local Guides</div>
+              <p style="font-size:.88rem">Vetted local partners and guides at every destination for authentic, safe experiences.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     DESTINATIONS
+═══════════════════════════════════════════════════════ -->
+<section class="section section--cream" id="destinations">
+  <div class="container">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:52px" class="reveal">
+      <div>
+        <div class="eyebrow">Where We Go</div>
+        <h2 class="section-title" style="font-size:var(--display-md)">Popular Destinations</h2>
+      </div>
+      <a href="#itineraries" class="btn btn-outline-dark">View All Itineraries</a>
+    </div>
+
+    <div class="destinations__grid reveal">
+      <a class="dest-card" href="maldives.html" style="text-decoration:none">
+        <img class="dest-card__img"
+          src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=1000&auto=format&fit=crop"
+          alt="Maldives" loading="lazy" />
+        <div class="dest-card__overlay"></div>
+        <div class="dest-card__info">
+          <div>
+            <div class="dest-card__name">Maldives</div>
+            <div class="dest-card__count">6 Packages</div>
+          </div>
+        </div>
+        <div class="dest-card__arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </a>
+      <a class="dest-card" href="bali.html" style="text-decoration:none">
+        <img class="dest-card__img"
+          src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=700&auto=format&fit=crop"
+          alt="Bali" loading="lazy" />
+        <div class="dest-card__overlay"></div>
+        <div class="dest-card__info">
+          <div>
+            <div class="dest-card__name">Bali</div>
+            <div class="dest-card__count">5 Packages</div>
+          </div>
+        </div>
+        <div class="dest-card__arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </a>
+      <a class="dest-card" href="thailand.html" style="text-decoration:none">
+        <img class="dest-card__img"
+          src="https://images.unsplash.com/photo-1541919329513-35f7af297129?w=700&auto=format&fit=crop"
+          alt="Thailand" loading="lazy" />
+        <div class="dest-card__overlay"></div>
+        <div class="dest-card__info">
+          <div>
+            <div class="dest-card__name">Thailand</div>
+            <div class="dest-card__count">7 Packages</div>
+          </div>
+        </div>
+        <div class="dest-card__arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </a>
+      <a class="dest-card" href="dubai.html" style="text-decoration:none">
+        <img class="dest-card__img"
+          src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=700&auto=format&fit=crop"
+          alt="Dubai" loading="lazy" />
+        <div class="dest-card__overlay"></div>
+        <div class="dest-card__info">
+          <div>
+            <div class="dest-card__name">Dubai</div>
+            <div class="dest-card__count">4 Packages</div>
+          </div>
+        </div>
+        <div class="dest-card__arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </a>
+      <a class="dest-card" href="japan.html" style="text-decoration:none">
+        <img class="dest-card__img"
+          src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=700&auto=format&fit=crop"
+          alt="Japan" loading="lazy" />
+        <div class="dest-card__overlay"></div>
+        <div class="dest-card__info">
+          <div>
+            <div class="dest-card__name">Japan</div>
+            <div class="dest-card__count">3 Packages</div>
+          </div>
+        </div>
+        <div class="dest-card__arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     ITINERARIES
+═══════════════════════════════════════════════════════ -->
+<section class="section" id="itineraries">
+  <div class="container">
+
+    <!-- Header row with currency toggle -->
+    <div class="itineraries-header-row reveal">
+      <div>
+        <div class="eyebrow">Curated Journeys</div>
+        <h2 class="section-title" style="font-size:var(--display-md)">Our Itineraries</h2>
+        <p class="section-sub" style="max-width:520px">Handcrafted tour packages designed by our experts. Every itinerary can be personalised to suit your travel dates and style.</p>
+      </div>
+
+      <!-- LKR / USD Toggle -->
+      <div class="currency-toggle-wrap">
+        <div class="currency-toggle" id="currencyToggle">
+          <button class="currency-toggle__btn active" data-currency="LKR">LKR</button>
+          <div class="currency-toggle__sep"></div>
+          <button class="currency-toggle__btn" data-currency="USD">USD</button>
+        </div>
+        <span class="currency-toggle__rate">1 USD ≈ LKR 334 &nbsp;·&nbsp; USD prices are approximate</span>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="itineraries__filters reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="beach">Beach &amp; Islands</button>
+      <button class="filter-btn" data-filter="adventure">Adventure</button>
+      <button class="filter-btn" data-filter="culture">Culture &amp; Heritage</button>
+      <button class="filter-btn" data-filter="luxury">Luxury</button>
+      <button class="filter-btn" data-filter="family">Family</button>
+    </div>
+
+    <!-- Grid -->
+    <div class="itineraries__grid">
+
+      <!-- 1 · Maldives -->
+      <div class="itin-card reveal" data-category="beach">
+        <div class="itin-card__img-wrap">
+          <img class="itin-card__img"
+            src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&auto=format&fit=crop"
+            alt="Maldives Escape" loading="lazy" />
+          <span class="itin-card__badge">Best Seller</span>
+          <span class="itin-card__duration">5D / 4N</span>
+        </div>
+        <div class="itin-card__body">
+          <div class="itin-card__dest">Maldives</div>
+          <h3 class="itin-card__title">Maldives Overwater Escape</h3>
+          <p class="itin-card__desc">Drift into paradise with private overwater villas, crystal-clear lagoons, and world-class snorkelling on a pristine coral atoll.</p>
+          <div class="itin-card__tags">
+            <span class="itin-card__tag">Overwater Villa</span>
+            <span class="itin-card__tag">Snorkelling</span>
+            <span class="itin-card__tag">All-Inclusive</span>
+          </div>
+          <div class="itin-card__footer">
+            <div class="itin-card__price">
+              <span class="itin-card__price-from">From</span>
+              <span class="itin-card__price-val" data-lkr="618000">LKR 618,000</span>
+            </div>
+            <button class="btn btn-forest itin-card__inquire js-inquire">Inquire Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 · Bali -->
+      <div class="itin-card reveal reveal-d1" data-category="culture">
+        <div class="itin-card__img-wrap">
+          <img class="itin-card__img"
+            src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=700&auto=format&fit=crop"
+            alt="Bali Discovery" loading="lazy" />
+          <span class="itin-card__badge">Popular</span>
+          <span class="itin-card__duration">7D / 6N</span>
+        </div>
+        <div class="itin-card__body">
+          <div class="itin-card__dest">Bali, Indonesia</div>
+          <h3 class="itin-card__title">Bali Cultural Discovery</h3>
+          <p class="itin-card__desc">Uncover Bali's soul through ancient temples, terraced rice paddies, traditional dance performances and rejuvenating spa rituals.</p>
+          <div class="itin-card__tags">
+            <span class="itin-card__tag">Temple Tours</span>
+            <span class="itin-card__tag">Rice Terraces</span>
+            <span class="itin-card__tag">Spa &amp; Wellness</span>
+          </div>
+          <div class="itin-card__footer">
+            <div class="itin-card__price">
+              <span class="itin-card__price-from">From</span>
+              <span class="itin-card__price-val" data-lkr="431000">LKR 431,000</span>
+            </div>
+            <button class="btn btn-forest itin-card__inquire js-inquire">Inquire Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 · Thailand -->
+      <div class="itin-card reveal reveal-d2" data-category="adventure">
+        <div class="itin-card__img-wrap">
+          <img class="itin-card__img"
+            src="https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=700&auto=format&fit=crop"
+            alt="Thailand Adventure" loading="lazy" />
+          <span class="itin-card__duration">6D / 5N</span>
+        </div>
+        <div class="itin-card__body">
+          <div class="itin-card__dest">Thailand</div>
+          <h3 class="itin-card__title">Thailand Island Adventure</h3>
+          <p class="itin-card__desc">Island-hop across Thailand's most breathtaking archipelagos — from Phi Phi Islands to secluded Koh Lanta and vibrant Krabi cliffs.</p>
+          <div class="itin-card__tags">
+            <span class="itin-card__tag">Island Hopping</span>
+            <span class="itin-card__tag">Kayaking</span>
+            <span class="itin-card__tag">Beach Stays</span>
+          </div>
+          <div class="itin-card__footer">
+            <div class="itin-card__price">
+              <span class="itin-card__price-from">From</span>
+              <span class="itin-card__price-val" data-lkr="327000">LKR 327,000</span>
+            </div>
+            <button class="btn btn-forest itin-card__inquire js-inquire">Inquire Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 · Dubai -->
+      <div class="itin-card reveal" data-category="luxury">
+        <div class="itin-card__img-wrap">
+          <img class="itin-card__img"
+            src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=700&auto=format&fit=crop"
+            alt="Dubai Luxury" loading="lazy" />
+          <span class="itin-card__badge">Luxury</span>
+          <span class="itin-card__duration">5D / 4N</span>
+        </div>
+        <div class="itin-card__body">
+          <div class="itin-card__dest">Dubai, UAE</div>
+          <h3 class="itin-card__title">Dubai Luxury Experience</h3>
+          <p class="itin-card__desc">Indulge in the ultimate Dubai luxury with 5-star hotel stays, desert safaris, sky-high dining, and private yacht cruises along the Marina.</p>
+          <div class="itin-card__tags">
+            <span class="itin-card__tag">5-Star Hotels</span>
+            <span class="itin-card__tag">Desert Safari</span>
+            <span class="itin-card__tag">Yacht Cruise</span>
+          </div>
+          <div class="itin-card__footer">
+            <div class="itin-card__price">
+              <span class="itin-card__price-from">From</span>
+              <span class="itin-card__price-val" data-lkr="551000">LKR 551,000</span>
+            </div>
+            <button class="btn btn-forest itin-card__inquire js-inquire">Inquire Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 · Japan -->
+      <div class="itin-card reveal reveal-d1" data-category="culture">
+        <div class="itin-card__img-wrap">
+          <img class="itin-card__img"
+            src="https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?w=700&auto=format&fit=crop"
+            alt="Japan Cultural Tour" loading="lazy" />
+          <span class="itin-card__duration">10D / 9N</span>
+        </div>
+        <div class="itin-card__body">
+          <div class="itin-card__dest">Japan</div>
+          <h3 class="itin-card__title">Japan Cultural Journey</h3>
+          <p class="itin-card__desc">Immerse in Japan's extraordinary contrast of ancient tradition and futuristic modernity — from Kyoto's temples to Tokyo's neon-lit streets.</p>
+          <div class="itin-card__tags">
+            <span class="itin-card__tag">Kyoto Temples</span>
+            <span class="itin-card__tag">Mt. Fuji</span>
+            <span class="itin-card__tag">Bullet Train</span>
+          </div>
+          <div class="itin-card__footer">
+            <div class="itin-card__price">
+              <span class="itin-card__price-from">From</span>
+              <span class="itin-card__price-val" data-lkr="818000">LKR 818,000</span>
+            </div>
+            <a href="japan.html" class="btn btn-forest itin-card__inquire">View Itinerary</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 · Singapore -->
+      <div class="itin-card reveal reveal-d2" data-category="family">
+        <div class="itin-card__img-wrap">
+          <img class="itin-card__img"
+            src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=700&auto=format&fit=crop"
+            alt="Singapore Family" loading="lazy" />
+          <span class="itin-card__badge">Family Pick</span>
+          <span class="itin-card__duration">6D / 5N</span>
+        </div>
+        <div class="itin-card__body">
+          <div class="itin-card__dest">Singapore</div>
+          <h3 class="itin-card__title">Singapore Family Explorer</h3>
+          <p class="itin-card__desc">A fun-packed family getaway through Singapore's iconic attractions — Universal Studios, Gardens by the Bay, Sentosa Island, and world-class cuisine.</p>
+          <div class="itin-card__tags">
+            <span class="itin-card__tag">Universal Studios</span>
+            <span class="itin-card__tag">Gardens by Bay</span>
+            <span class="itin-card__tag">Sentosa</span>
+          </div>
+          <div class="itin-card__footer">
+            <div class="itin-card__price">
+              <span class="itin-card__price-from">From</span>
+              <span class="itin-card__price-val" data-lkr="374000">LKR 374,000</span>
+            </div>
+            <button class="btn btn-forest itin-card__inquire js-inquire">Inquire Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 · Nepal -->
+      <div class="itin-card reveal" data-category="adventure">
+        <div class="itin-card__img-wrap">
+          <img class="itin-card__img"
+            src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=700&auto=format&fit=crop"
+            alt="Nepal Trekking" loading="lazy" />
+          <span class="itin-card__duration">9D / 8N</span>
+        </div>
+        <div class="itin-card__body">
+          <div class="itin-card__dest">Nepal</div>
+          <h3 class="itin-card__title">Nepal Himalayan Trek</h3>
+          <p class="itin-card__desc">Trek through the roof of the world on the legendary Annapurna Circuit. Jaw-dropping mountain vistas and authentic Sherpa culture await.</p>
+          <div class="itin-card__tags">
+            <span class="itin-card__tag">Trekking</span>
+            <span class="itin-card__tag">Annapurna</span>
+            <span class="itin-card__tag">Kathmandu</span>
+          </div>
+          <div class="itin-card__footer">
+            <div class="itin-card__price">
+              <span class="itin-card__price-from">From</span>
+              <span class="itin-card__price-val" data-lkr="461000">LKR 461,000</span>
+            </div>
+            <button class="btn btn-forest itin-card__inquire js-inquire">Inquire Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 · Europe -->
+      <div class="itin-card reveal reveal-d1" data-category="luxury">
+        <div class="itin-card__img-wrap">
+          <img class="itin-card__img"
+            src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=700&auto=format&fit=crop"
+            alt="Europe Grand Tour" loading="lazy" />
+          <span class="itin-card__badge">Premium</span>
+          <span class="itin-card__duration">14D / 13N</span>
+        </div>
+        <div class="itin-card__body">
+          <div class="itin-card__dest">Europe</div>
+          <h3 class="itin-card__title">European Grand Tour</h3>
+          <p class="itin-card__desc">Journey through the continent's crown jewels — Paris, Rome, Barcelona, and Santorini — on a meticulously planned multi-city luxury escape.</p>
+          <div class="itin-card__tags">
+            <span class="itin-card__tag">Paris</span>
+            <span class="itin-card__tag">Rome</span>
+            <span class="itin-card__tag">Santorini</span>
+          </div>
+          <div class="itin-card__footer">
+            <div class="itin-card__price">
+              <span class="itin-card__price-from">From</span>
+              <span class="itin-card__price-val" data-lkr="1402000">LKR 1,402,000</span>
+            </div>
+            <button class="btn btn-forest itin-card__inquire js-inquire">Inquire Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9 · Mauritius -->
+      <div class="itin-card reveal reveal-d2" data-category="beach">
+        <div class="itin-card__img-wrap">
+          <img class="itin-card__img"
+            src="https://images.unsplash.com/photo-1559628233-100c798642d8?w=700&auto=format&fit=crop"
+            alt="Mauritius" loading="lazy" />
+          <span class="itin-card__badge">Honeymoon</span>
+          <span class="itin-card__duration">7D / 6N</span>
+        </div>
+        <div class="itin-card__body">
+          <div class="itin-card__dest">Mauritius</div>
+          <h3 class="itin-card__title">Mauritius Romantic Getaway</h3>
+          <p class="itin-card__desc">A dreamy retreat on this Indian Ocean jewel — pristine white beaches, turquoise waters, and some of the world's most luxurious beachfront resorts.</p>
+          <div class="itin-card__tags">
+            <span class="itin-card__tag">Honeymoon</span>
+            <span class="itin-card__tag">Beach Resort</span>
+            <span class="itin-card__tag">Water Sports</span>
+          </div>
+          <div class="itin-card__footer">
+            <div class="itin-card__price">
+              <span class="itin-card__price-from">From</span>
+              <span class="itin-card__price-val" data-lkr="701000">LKR 701,000</span>
+            </div>
+            <button class="btn btn-forest itin-card__inquire js-inquire">Inquire Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /itineraries__grid -->
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SERVICES
+═══════════════════════════════════════════════════════ -->
+<section class="section section--cream" id="services">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:60px" class="reveal">
+      <div class="eyebrow" style="justify-content:center">What We Offer</div>
+      <h2 class="section-title" style="font-size:var(--display-md)">Our Services</h2>
+      <p class="section-sub" style="margin:14px auto 0">Everything you need for a seamless, unforgettable journey — from first enquiry to final farewell.</p>
+    </div>
+    <div class="services__grid">
+      <div class="service-card reveal">
+        <div class="service-card__num">01</div>
+        <h3 class="service-card__title">VIP Experiences</h3>
+        <p>Exclusive access to hidden gems, private tours, and once-in-a-lifetime experiences curated by our in-destination experts.</p>
+      </div>
+      <div class="service-card reveal reveal-d1">
+        <div class="service-card__num">02</div>
+        <h3 class="service-card__title">24/7 Concierge</h3>
+        <p>Round-the-clock support from dedicated travel consultants before, during, and after your trip — wherever you are in the world.</p>
+      </div>
+      <div class="service-card reveal reveal-d2">
+        <div class="service-card__num">03</div>
+        <h3 class="service-card__title">Custom Itineraries</h3>
+        <p>Every trip is built from scratch around your interests, pace, and budget. No cookie-cutter packages — only journeys designed for you.</p>
+      </div>
+      <div class="service-card reveal reveal-d1">
+        <div class="service-card__num">04</div>
+        <h3 class="service-card__title">Private Transfers</h3>
+        <p>Airport pickups, hotel transfers, and private vehicle hire with vetted, professional drivers across all our destinations.</p>
+      </div>
+      <div class="service-card reveal reveal-d2">
+        <div class="service-card__num">05</div>
+        <h3 class="service-card__title">Luxury Accommodation</h3>
+        <p>Carefully selected hotels, villas, and resorts at every price point — from boutique guesthouses to world-class properties.</p>
+      </div>
+      <div class="service-card reveal reveal-d3">
+        <div class="service-card__num">06</div>
+        <h3 class="service-card__title">Visa Assistance</h3>
+        <p>Comprehensive visa guidance, documentation support, and application assistance for all major destinations worldwide.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     HOW IT WORKS
+═══════════════════════════════════════════════════════ -->
+<section class="section section--dark" id="process">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:72px" class="reveal">
+      <div class="eyebrow" style="justify-content:center">Simple Process</div>
+      <h2 class="section-title" style="font-size:var(--display-md)">How It Works</h2>
+      <p class="section-sub" style="margin:14px auto 0;color:rgba(255,255,255,.6)">From your first message to the moment you land back home — every step seamless.</p>
+    </div>
+    <div class="process__grid">
+      <div class="process__connector"></div>
+      <div class="process-step reveal">
+        <div class="process-step__circle">
+          <span class="process-step__circle-inner">01</span>
+        </div>
+        <h3 class="process-step__title" style="color:var(--white)">Share Your Dream</h3>
+        <p style="font-size:.88rem;color:rgba(255,255,255,.5)">Tell us where you want to go, what experiences matter most, and your ideal travel dates.</p>
+      </div>
+      <div class="process-step reveal reveal-d1">
+        <div class="process-step__circle">
+          <span class="process-step__circle-inner">02</span>
+        </div>
+        <h3 class="process-step__title" style="color:var(--white)">We Craft Your Journey</h3>
+        <p style="font-size:.88rem;color:rgba(255,255,255,.5)">Our experts design a personalised itinerary with hand-picked hotels, experiences, and transfers.</p>
+      </div>
+      <div class="process-step reveal reveal-d2">
+        <div class="process-step__circle">
+          <span class="process-step__circle-inner">03</span>
+        </div>
+        <h3 class="process-step__title" style="color:var(--white)">Review &amp; Refine</h3>
+        <p style="font-size:.88rem;color:rgba(255,255,255,.5)">We present your plan, then adjust every detail until it's exactly right for you.</p>
+      </div>
+      <div class="process-step reveal reveal-d3">
+        <div class="process-step__circle">
+          <span class="process-step__circle-inner">04</span>
+        </div>
+        <h3 class="process-step__title" style="color:var(--white)">Travel in Style</h3>
+        <p style="font-size:.88rem;color:rgba(255,255,255,.5)">Sit back and enjoy — we handle all logistics while you create memories that last a lifetime.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     TESTIMONIALS
+═══════════════════════════════════════════════════════ -->
+<section class="section section--forest" id="journal">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:64px" class="reveal">
+      <div class="eyebrow" style="justify-content:center">Traveller Reviews</div>
+      <h2 class="section-title" style="font-size:var(--display-md)">What Our Guests Say</h2>
+      <p class="section-sub" style="margin:14px auto 0;color:rgba(255,255,255,.6)">Hear from the people who've journeyed with us — their stories are our greatest achievement.</p>
+    </div>
+    <div class="testimonials__grid">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p class="testimonial-card__quote">"Go Holidays made our honeymoon in the Maldives truly magical. Every detail was perfect — from the overwater bungalow to the private sunset dinner. We couldn't have asked for more."</p>
+        <div class="testimonial-card__author">
+          <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&face" alt="Ayesha R." loading="lazy" />
+          <div>
+            <div class="testimonial-card__name">Ayesha R.</div>
+            <div class="testimonial-card__trip">Maldives Overwater Escape</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-d1">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p class="testimonial-card__quote">"The Japan tour was an absolute dream. The team organised everything flawlessly — bullet trains, temple visits, even a tea ceremony. I felt like a VIP the entire trip."</p>
+        <div class="testimonial-card__author">
+          <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&face" alt="Kasun P." loading="lazy" />
+          <div>
+            <div class="testimonial-card__name">Kasun P.</div>
+            <div class="testimonial-card__trip">Japan Cultural Journey</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-d2">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p class="testimonial-card__quote">"Our family trip to Singapore was perfectly planned. The kids loved Universal Studios, we loved the food and ease of the whole experience. Will definitely book again!"</p>
+        <div class="testimonial-card__author">
+          <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&auto=format&fit=crop&face" alt="Nisha &amp; Family" loading="lazy" />
+          <div>
+            <div class="testimonial-card__name">Nisha &amp; Family</div>
+            <div class="testimonial-card__trip">Singapore Family Explorer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     CTA BANNER
+═══════════════════════════════════════════════════════ -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-banner__inner">
+      <div>
+        <h2 class="cta-banner__title">Ready to Plan Your<br>Dream Journey?</h2>
+        <p class="cta-banner__sub">Speak with one of our travel experts today — no obligation, just inspiration.</p>
+      </div>
+      <div class="cta-banner__actions">
+        <a href="#contact" class="btn btn-forest">Start Planning</a>
+        <a href="https://wa.me/94XXXXXXXXX" target="_blank" rel="noopener" class="btn btn-outline-dark">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════════════════════ -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="contact__grid">
+
+      <div class="reveal">
+        <div class="eyebrow">Get In Touch</div>
+        <h2 class="section-title" style="font-size:var(--display-md);margin-bottom:16px">Build Your<br>Perfect Trip.</h2>
+        <p style="margin-bottom:44px">Whether you have a destination in mind or just a dream — reach out and our travel consultants will craft the perfect journey for you.</p>
+
+        <div class="contact__info-item">
+          <div class="contact__info-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="contact__info-label">Address</div>
+            <div class="contact__info-val">Colombo, Sri Lanka</div>
+          </div>
+        </div>
+        <div class="contact__info-item">
+          <div class="contact__info-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <div class="contact__info-label">Phone / WhatsApp</div>
+            <div class="contact__info-val">+94 XX XXX XXXX</div>
+          </div>
+        </div>
+        <div class="contact__info-item">
+          <div class="contact__info-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <div class="contact__info-label">Email</div>
+            <div class="contact__info-val">info@goholidays.lk</div>
+          </div>
+        </div>
+
+        <div class="contact__socials">
+          <a href="https://instagram.com/goholidays_srilanka" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://facebook.com/goholidays.lk" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="form-card reveal reveal-d2">
+        <h3 style="font-size:1.4rem;color:var(--ink);margin-bottom:6px">Send an Enquiry</h3>
+        <p style="font-size:.88rem;margin-bottom:28px">Fill in your details and we'll get back to you within 24 hours.</p>
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Phone / WhatsApp</label>
+              <input type="tel" placeholder="+94 XX XXX XXXX" />
+            </div>
+            <div class="form-group">
+              <label>Preferred Destination</label>
+              <select>
+                <option value="">Select…</option>
+                <option>Maldives</option>
+                <option>Bali</option>
+                <option>Thailand</option>
+                <option>Dubai</option>
+                <option>Japan</option>
+                <option>Singapore</option>
+                <option>Europe</option>
+                <option>Mauritius</option>
+                <option>Nepal</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Travel Date</label>
+              <input type="date" />
+            </div>
+            <div class="form-group">
+              <label>Travellers</label>
+              <select>
+                <option>1</option><option>2</option>
+                <option>3–4</option><option>5–8</option><option>9+</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group full" style="margin-bottom:24px">
+            <label>Tell Us About Your Dream Trip</label>
+            <textarea placeholder="Destinations, travel style, special requests…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-lime" style="width:100%;justify-content:center">
+            Send Enquiry
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+        <div class="success-msg" id="contactSuccess">
+          <div class="success-msg__icon">✓</div>
+          <h3>Enquiry Received!</h3>
+          <p>Thank you for reaching out. One of our travel consultants will be in touch within 24 hours.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__logo">
+          <img src="assets/images/logo.png" alt="Go Holidays" />
+        </div>
+        <p class="footer__desc">Sri Lanka's premier outbound travel agency — the distinguished leisure arm of Travel7. We craft bespoke journeys that turn travel dreams into extraordinary realities.</p>
+        <div class="contact__socials">
+          <a href="https://instagram.com/goholidays_srilanka" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://facebook.com/goholidays.lk" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Quick Links</div>
+        <ul class="footer__links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#itineraries">Itineraries</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Destinations</div>
+        <ul class="footer__links">
+          <li><a href="#itineraries">Maldives</a></li>
+          <li><a href="#itineraries">Bali</a></li>
+          <li><a href="#itineraries">Thailand</a></li>
+          <li><a href="#itineraries">Dubai</a></li>
+          <li><a href="#itineraries">Japan</a></li>
+          <li><a href="#itineraries">Europe</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Contact</div>
+        <ul class="footer__links">
+          <li><a href="mailto:info@goholidays.lk">info@goholidays.lk</a></li>
+          <li><a href="tel:+94XXXXXXXXX">+94 XX XXX XXXX</a></li>
+          <li style="color:rgba(255,255,255,.35);font-size:.82rem;margin-top:4px">Colombo, Sri Lanka</li>
+        </ul>
+        <div style="margin-top:24px">
+          <a href="#contact" class="btn btn-lime" style="font-size:.75rem;padding:12px 22px">Plan Your Trip</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Go Holidays by United Ventures. All rights reserved.</span>
+      <div style="display:flex;gap:20px">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     INQUIRY MODAL
+═══════════════════════════════════════════════════════ -->
+<div class="modal-overlay" id="inquiryModal">
+  <div class="modal">
+    <button class="modal__close" id="modalClose" aria-label="Close">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+
+    <form id="inquiryForm">
+      <h3 class="modal__title" id="modalTitle">Package Enquiry</h3>
+      <p class="modal__sub">Our travel consultant will contact you within 24 hours to discuss your perfect trip.</p>
+      <input type="hidden" id="modalTrip" name="trip" />
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Your name" required />
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="your@email.com" required />
+      </div>
+      <div class="form-group">
+        <label>Phone / WhatsApp</label>
+        <input type="tel" placeholder="+94 XX XXX XXXX" />
+      </div>
+      <div class="form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+        <div class="form-group" style="margin-bottom:0">
+          <label>Travel Date</label>
+          <input type="date" />
+        </div>
+        <div class="form-group" style="margin-bottom:0">
+          <label>Travellers</label>
+          <select>
+            <option>1</option><option selected>2</option>
+            <option>3–4</option><option>5–8</option><option>9+</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group" style="margin-top:14px">
+        <label>Additional Notes</label>
+        <textarea placeholder="Special requests or questions…" style="min-height:80px"></textarea>
+      </div>
+      <button type="submit" class="btn btn-lime" style="width:100%;justify-content:center;margin-top:4px">
+        Send Enquiry
+      </button>
+    </form>
+
+    <div class="success-msg" id="successMsg">
+      <div class="success-msg__icon">✓</div>
+      <h3>Enquiry Sent!</h3>
+      <p>We'll be in touch within 24 hours. Get ready to start your adventure!</p>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

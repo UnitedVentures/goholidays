@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maldives — Go Holidays</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/itinerary.css" />
+  <style>
+    .coming-hero {
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: var(--forest-xdk);
+    }
+    .coming-hero__bg {
+      position: absolute;
+      inset: -10%;
+      background-image: url('https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=2000&auto=format&fit=crop&q=80');
+      background-size: cover;
+      background-position: center;
+      filter: brightness(.45) saturate(.8);
+    }
+    .coming-hero__content {
+      position: relative;
+      z-index: 2;
+      padding: 120px 0 80px;
+      width: 100%;
+    }
+    .coming-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 16px;
+      border-radius: 100px;
+      background: rgba(174,200,82,.15);
+      border: 1px solid rgba(174,200,82,.35);
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--lime);
+      margin-bottom: 24px;
+    }
+    .coming-title {
+      font-size: var(--display-xl);
+      color: var(--white);
+      line-height: .97;
+      margin-bottom: 20px;
+    }
+    .coming-title em { color: var(--lime); font-style: normal; display: block; }
+    .coming-desc {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,.65);
+      max-width: 520px;
+      line-height: 1.8;
+      margin-bottom: 44px;
+    }
+    .coming-notice {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: var(--radius);
+      padding: 16px 22px;
+      color: rgba(255,255,255,.7);
+      font-size: .9rem;
+      margin-bottom: 36px;
+      backdrop-filter: blur(8px);
+    }
+    .coming-notice svg { color: var(--lime); flex-shrink: 0; }
+    .coming-form-wrap {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(174,200,82,.2);
+      border-top: 3px solid var(--lime);
+      border-radius: var(--radius);
+      padding: 36px;
+      max-width: 540px;
+      backdrop-filter: blur(12px);
+      margin-top: 16px;
+    }
+    .coming-form-wrap h3 {
+      color: var(--white);
+      font-size: 1.2rem;
+      font-weight: 800;
+      letter-spacing: -.02em;
+      margin-bottom: 6px;
+    }
+    .coming-form-wrap p {
+      font-size: .85rem;
+      color: rgba(255,255,255,.5);
+      margin-bottom: 22px;
+    }
+    .coming-form-wrap .form-group label { color: rgba(255,255,255,.55); }
+    .coming-form-wrap input,
+    .coming-form-wrap select,
+    .coming-form-wrap textarea {
+      background: rgba(255,255,255,.08) !important;
+      border-color: rgba(255,255,255,.15) !important;
+      color: var(--white) !important;
+    }
+    .coming-form-wrap input::placeholder,
+    .coming-form-wrap textarea::placeholder { color: rgba(255,255,255,.3); }
+    .packages-strip {
+      background: var(--forest);
+      padding: 72px 0;
+    }
+    .packages-strip__title { color: var(--white); margin-bottom: 8px; }
+    .packages-strip__sub { color: rgba(255,255,255,.55); margin-bottom: 48px; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar page-nav" id="navbar">
+  <div class="container">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo"><img src="assets/images/logo.png" alt="Go Holidays" /></a>
+      <ul class="navbar__nav">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#destinations">Destinations</a></li>
+        <li><a href="index.html#itineraries">Itineraries</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="navbar__actions">
+        <a href="#enquiry" class="btn btn-lime">Enquire Now</a>
+      </div>
+      <button class="navbar__hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<section class="coming-hero">
+  <div class="coming-hero__bg"></div>
+  <div class="coming-hero__content">
+    <div class="container">
+      <a href="index.html#destinations" class="itin-hero__back" style="margin-bottom:28px;display:inline-flex">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        All Destinations
+      </a>
+      <div class="coming-badge">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Indian Ocean · 6 Packages
+      </div>
+      <h1 class="coming-title display">Maldives<br><em>Overwater</em><br>Paradise</h1>
+      <p class="coming-desc">The world's most extraordinary archipelago — 1,200 coral islands, infinite turquoise lagoons, and the kind of silence that only exists far out at sea.</p>
+      <div class="coming-notice">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+        Full itinerary pages coming soon — register your interest below and we'll be in touch.
+      </div>
+      <div id="enquiry" class="coming-form-wrap">
+        <h3>Register Your Interest</h3>
+        <p>Tell us your dream Maldives dates — we'll send you packages and pricing within 24 hours.</p>
+        <form id="contactForm">
+          <div class="form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your name" required /></div>
+            <div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com" required /></div>
+          </div>
+          <div class="form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div class="form-group"><label>Travel Month</label><input type="month" /></div>
+            <div class="form-group"><label>Travellers</label>
+              <select><option>2</option><option>3–4</option><option>5–8</option><option>Solo (1)</option></select>
+            </div>
+          </div>
+          <div class="form-group" style="margin-bottom:20px"><label>Notes</label><textarea placeholder="Budget range, room preferences, special occasions…" style="min-height:80px"></textarea></div>
+          <button type="submit" class="btn btn-lime" style="width:100%;justify-content:center">Send Enquiry <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+        </form>
+        <div class="success-msg" id="contactSuccess">
+          <div class="success-msg__icon" style="background:var(--lime);color:var(--forest-xdk)">✓</div>
+          <h3 style="color:var(--white)">Received!</h3>
+          <p style="color:rgba(255,255,255,.6)">We'll send you our Maldives packages within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Related -->
+<div class="packages-strip">
+  <div class="container">
+    <div class="eyebrow">Explore More</div>
+    <h2 class="packages-strip__title" style="font-size:var(--display-md)">Other Destinations</h2>
+    <p class="packages-strip__sub">While we complete our Maldives packages, explore our other curated journeys.</p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap">
+      <a href="japan.html" class="btn btn-lime">Japan →</a>
+      <a href="bali.html" class="btn btn-outline-light">Bali →</a>
+      <a href="index.html#itineraries" class="btn btn-outline-light">All Itineraries →</a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__bottom" style="padding:28px 0;border-top:1px solid rgba(174,200,82,.1)">
+      <div class="footer__logo" style="display:flex;align-items:center;gap:16px">
+        <img src="assets/images/logo.png" alt="Go Holidays" style="height:28px;filter:brightness(0) invert(1)" />
+        <span style="font-size:.8rem">© 2026 Go Holidays by United Ventures.</span>
+      </div>
+      <div style="display:flex;gap:20px">
+        <a href="index.html" style="color:rgba(255,255,255,.4);font-size:.8rem">Home</a>
+        <a href="index.html#contact" style="color:rgba(255,255,255,.4);font-size:.8rem">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nb = document.getElementById('navbar');
+  window.addEventListener('scroll', () => nb.classList.toggle('scrolled', window.scrollY > 60), { passive: true });
+  document.getElementById('hamburger').addEventListener('click', () => nb.classList.toggle('open'));
+  document.getElementById('contactForm')?.addEventListener('submit', e => {
+    e.preventDefault();
+    document.getElementById('contactForm').style.display = 'none';
+    document.getElementById('contactSuccess').classList.add('show');
+  });
+</script>
+</body>
+</html>
