@@ -940,7 +940,7 @@ img { display: block; max-width: 100%; }
   gap: 12px;
   flex-wrap: wrap;
 }
-.itin-card__price {}
+/* .itin-card__price {} */
 .itin-card__price-from {
   display: block;
   font-size: .65rem;
